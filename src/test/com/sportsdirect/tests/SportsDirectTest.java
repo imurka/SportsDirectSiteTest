@@ -2,7 +2,6 @@ package test.com.sportsdirect.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -32,6 +31,7 @@ public class SportsDirectTest {
     @AfterClass
     public void shutDown() {
         if (driver != null) {
+//            driver.quit();
             driver.quit();
         }
     }
